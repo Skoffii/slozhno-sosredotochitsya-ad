@@ -26,7 +26,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
-  margin-bottom: 40px;
 }
 
 .decore_rec {
@@ -119,8 +118,13 @@
   max-block-size: 117px;
 }
 
+.main {
+  font-family: var(--font), sans-serif;
+}
+
 .main__section {
-  margin-bottom: 40px;
+  margin-block-start: 50px;
+  margin-block-end: 40px;
 }
 
 .section__question_title {
@@ -140,6 +144,12 @@
 .section__answer_title {
   margin-top: 10px;
   font-size: var(--font-size);
+}
+
+.section__advice_title {
+  margin-top: 10px;
+  font-size: var(--font-size);
+  font-weight: 400;
 }
 
 .section__image {
