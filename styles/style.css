@@ -22,7 +22,7 @@
 
 .header {
   position: relative;
-  min-block-size: 100vh;
+  min-block-size: calc(100vh - 2 * var(--inblock-padding));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
