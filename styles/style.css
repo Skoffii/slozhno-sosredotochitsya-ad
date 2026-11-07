@@ -45,14 +45,12 @@
   outline: 1px solid var(--dark-text-color);
 }
 
-
 .decore_rec {
   grid-row: 1;
   display: inline-block;
   justify-self: end;
   text-transform: uppercase;
 }
-
 
 .header__title {
   grid-row: 3;
