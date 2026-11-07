@@ -1,5 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   margin: 0;
@@ -15,20 +21,36 @@
 }
 
 .header {
+  position: relative;
   min-block-size: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content 1fr min-content 1fr;
+  grid-template-rows:  1fr min-content 1fr;
+  margin-bottom: 40px;
+}
+
+.decore_rec {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  display: flex;
+  justify-self: end;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__theme-menu {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+  margin-block-start: 5vh;
 }
 
 .header__theme-menu-list {
-  grid-column: 1;
-  grid-row: 2;
-  align-self: start;
-  justify-self: end;
   display: flex;
   flex-direction: column;
-  margin-block-start: 5vh;
   inline-size: 70px;
   block-size: 98px;
   gap: 10px;
@@ -46,15 +68,32 @@
   outline: 1px solid var(--dark-text-color);
 }
 
-.decore_rec {
-  grid-row: 1;
-  display: inline-block;
-  justify-self: end;
-  text-transform: uppercase;
+.header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--dark-text-color);
+  border-right: 1px solid var(--dark-text-color);
+  inset-inline-end: 0;
+  inset-block-start: 0;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--dark-text-color);
+  border-left: 1px solid var(--dark-text-color);
+  inset-inline-start: 0;
+  inset-block-end: 0;
 }
 
 .header__title {
-  grid-row: 3;
+  grid-row: 2;
   justify-self: center;
   color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -72,6 +111,7 @@
 }
 
 .header__text {
+  grid-row: 3;
   display: block;
   justify-self: start;
   align-self: center;
@@ -79,5 +119,24 @@
   max-block-size: 117px;
 }
 
+.main__section {
+  margin-bottom: 40px;
+}
 
+.section__question_title {
+  grid-row: 1;
+  grid-column: 3;
+  font-size: var(--font-size);
+  margin-bottom: 10px;
+}
 
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section__answer_title {
+  margin-top: 10px;
+  font-size: var(--font-size);
+}
