@@ -45,14 +45,13 @@
   grid-row: 1;
   align-self: start;
   justify-self: end;
-  margin-block-start: 5vh;
+  margin-block-start: 10vh;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  inline-size: 70px;
-  block-size: 98px;
+  align-items: flex-end;
   gap: 10px;
 }
 
@@ -62,6 +61,7 @@
   color: var(--dark-text-color);
   border: none;
   text-transform: lowercase;
+  padding: 0 13px;
 }
 
 .header__theme-menu-button_active {
@@ -127,13 +127,14 @@
   grid-row: 1;
   grid-column: 3;
   font-size: var(--font-size);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .section__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-block-end: 10px;
 }
 
 .section__answer_title {
