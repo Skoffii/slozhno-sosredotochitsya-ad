@@ -119,12 +119,16 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   font-family: var(--font), sans-serif;
+  line-height: 23.4px;
+  letter-spacing: 0%;
 }
 
 .main__section {
   margin-block-start: 50px;
-  margin-block-end: 40px;
+  /* margin-block-end: 40px; */
 }
 
 .section__question_title {
