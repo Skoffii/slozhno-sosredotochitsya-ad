@@ -67,6 +67,10 @@
   outline: 1px solid var(--dark-text-color);
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid #35343066
+}
+
 .header::before {
   content: "";
   position: absolute;
@@ -154,6 +158,12 @@
   margin-top: 10px;
   font-size: var(--font-size);
   font-weight: 400;
+}
+
+.section__content_images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .section__image {
