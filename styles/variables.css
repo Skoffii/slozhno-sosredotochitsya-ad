@@ -18,3 +18,9 @@
     --bg-image: url('../images/cover-image-dark.png');
   }
 }
+
+@media (768 < width <= 1024){
+  :root {
+    --inblock-padding: 20px;
+  }
+}
