@@ -236,5 +236,9 @@
 }
 
 @media (375 < width <= 768) {
+  .main__section_first_question {
+    display: flex;
+    flex-direction: row;
+  }
 
 }
