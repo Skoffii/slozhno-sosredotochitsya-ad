@@ -135,7 +135,7 @@
   grid-row: 1;
   grid-column: 3;
   font-size: var(--font-size);
-  margin-block-end: 10px;
+  gap: 10px;
 }
 
 .section__content {
@@ -162,6 +162,7 @@
 }
 
 .footer {
+  margin-block-start: 40px;
   position: relative;
   min-block-size: 100vh;
   position: relative;
