@@ -13,7 +13,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: aliceblue;
+  background-color: #FFF1F7;
   font-family: var(--font), sans-serif;
   padding: var(--inblock-padding);
   font-size: var(--font-size);
@@ -139,4 +139,51 @@
 .section__answer_title {
   margin-top: 10px;
   font-size: var(--font-size);
+}
+
+.section__image {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.footer {
+  position: relative;
+  min-block-size: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  justify-self: center;
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--dark-text-color);
+  border-right: 1px solid var(--dark-text-color);
+  inset-inline-end: 0;
+  inset-block-start: 0;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--dark-text-color);
+  border-left: 1px solid var(--dark-text-color);
+  inset-inline-start: 0;
+  inset-block-end: 0;
 }
