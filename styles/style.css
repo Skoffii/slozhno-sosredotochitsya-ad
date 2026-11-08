@@ -28,11 +28,9 @@ body {
   position: relative;
   min-block-size: 100vh;
   margin-block-start: calc(-1 * var(--inblock-padding));
-  margin-block-end: calc(10px - var(--inblock-padding));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
-  margin-block-end: 10px;
   padding-block: var(--inblock-padding);
 }
 
