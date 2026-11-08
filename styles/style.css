@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   margin: 0;
@@ -22,7 +26,7 @@
 
 .header {
   position: relative;
-  min-block-size: calc(100vh - 2 * var(--inblock-padding));
+  min-block-size: 100dvh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
@@ -197,7 +201,6 @@
   margin-block-start: 40px;
   position: relative;
   min-block-size: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
