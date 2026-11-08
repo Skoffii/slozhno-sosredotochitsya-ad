@@ -1,15 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   margin: 0;
@@ -20,6 +10,7 @@ body {
   background-color: #FFF1F7;
   font-family: var(--font), sans-serif;
   padding: var(--inblock-padding);
+  padding-block-start: 0;
   font-size: var(--font-size);
   color: var(--dark-text-color);
 }
@@ -27,7 +18,7 @@ body {
 .header {
   position: relative;
   min-block-size: 100vh;
-  margin-block-start: calc(-1 * var(--inblock-padding));
+  margin-block-end: calc(10px - var(--inblock-padding));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
