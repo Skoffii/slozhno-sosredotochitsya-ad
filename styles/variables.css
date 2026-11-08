@@ -19,7 +19,7 @@
   }
 }
 
-@media (768 < width <= 1024){
+@media (min-width:768px){
   :root {
     --inblock-padding: 20px;
   }

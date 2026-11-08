@@ -8,6 +8,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0;
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
@@ -21,13 +22,11 @@
 
 .header {
   position: relative;
-  min-block-size: 100vh;
+  min-block-size: calc(100vh - 2 * var(--inblock-padding));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
   margin-block-end: 10px;
-  margin-block-start: calc(-1 * var(--inblock-padding));
-  padding-block: var(--inblock-padding);
 }
 
 .decore_rec {
@@ -88,7 +87,7 @@
   border-top: 1px solid var(--dark-text-color);
   border-right: 1px solid var(--dark-text-color);
   inset-inline-end: 0;
-  inset-block-start: var(--inblock-padding);
+  inset-block-start: 0;
 }
 
 .header::after {
@@ -100,7 +99,7 @@
   border-bottom: 1px solid var(--dark-text-color);
   border-left: 1px solid var(--dark-text-color);
   inset-inline-start: 0;
-  inset-block-end: var(--inblock-padding);
+  inset-block-end: 0;
 }
 
 .header__title {
@@ -239,21 +238,32 @@
 
 @media (min-width: 768px) {
   .header__title {
+    margin-left: -20px;
+    margin-right: -20px;
+    inline-size: calc(100% + 40px);
     justify-self: start;
   }
 
   .main__section_first_question,
+  .main__section_second_question,
   .main__section_third_question {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     column-gap: 20px;
   }
+
+  .main__section_second_question .section__content {
+    grid-column: 1 / -1;   /* содержимое под заголовком на всю ширину */
+  }
+
   .header__text {
     display: block;
     justify-self: end;
   }
   .section__question_title {
     margin-block-start: 10px;
+    white-space: wrap;
+    max-inline-size: 30vh;
   }
 
   .section__content_images {
