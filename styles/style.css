@@ -6,13 +6,9 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  margin: 0;
+  margin: 0 auto;
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
@@ -26,7 +22,7 @@ body {
 
 .header {
   position: relative;
-  min-block-size: 100dvh;
+  min-block-size: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
@@ -74,12 +70,17 @@ body {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--dark-text-color-transparent)
+  outline: 1px solid var(--dark-text-color-transparent);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--dark-text-color);
+  cursor: pointer;
 }
 
 .header::before {
