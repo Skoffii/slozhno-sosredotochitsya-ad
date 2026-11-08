@@ -9,8 +9,19 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-image: url('../images/cover-image-light.png');
+  /* --font-size: 18px;
+  --inblock-padding: 10px;
+  --dark-text-color: #F1B2CE;
+  --dark-text-color-transparent: #FF007066;
+  --font: 'IBM Plex mono';
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --bg-color: #000028; */
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
+
+

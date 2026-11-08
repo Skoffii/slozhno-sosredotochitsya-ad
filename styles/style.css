@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #FFF1F7;
+  background-color: var(--bg-color);
   font-family: var(--font), sans-serif;
   padding: var(--inblock-padding);
   padding-block-start: 0;
@@ -346,6 +346,8 @@
   }
 
   .section__content_images {
+    margin-block-start: 20px;
     max-block-size: calc(1028px + var(--inblock-padding));
+    gap: 20px;
   }
 }

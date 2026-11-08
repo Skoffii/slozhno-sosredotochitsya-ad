@@ -11,16 +11,22 @@
   --font: 'IBM Plex mono';
   --title-color: #ffc2e6;
   --accent-color: #ff8dcb;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-image: url('../images/cover-image-dark.png');
-  }
+  --bg-color: #FFF1F7;
 }
 
 @media (min-width:768px) {
   :root {
     --inblock-padding: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url('../images/cover-image-dark.png');
+    --dark-text-color: #F1B2CE;
+    --dark-text-color-transparent: #FF007066;
+    --title-color: #DB00FF;
+    --accent-color: #FF0070;
+    --bg-color: #000028;
   }
 }
