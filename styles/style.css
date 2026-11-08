@@ -9,8 +9,8 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   font-family: var(--font), sans-serif;
-  padding: var(--inblock-padding);
-  padding-block-start: 0;
+  /* padding: var(--inblock-padding); */
+  /* padding-block-start: 0; */
   font-size: var(--font-size);
   color: var(--dark-text-color);
 }
@@ -87,7 +87,7 @@
   height: 25px;
   border-top: 1px solid var(--dark-text-color);
   border-right: 1px solid var(--dark-text-color);
-  inset-inline-end: 0;
+  inset-inline-end: var(--inblock-padding);
   inset-block-start: var(--inblock-padding);
 }
 
@@ -99,7 +99,7 @@
   height: 25px;
   border-bottom: 1px solid var(--dark-text-color);
   border-left: 1px solid var(--dark-text-color);
-  inset-inline-start: 0;
+  inset-inline-start: var(--inblock-padding);
   inset-block-end: var(--inblock-padding);
 }
 
@@ -220,8 +220,8 @@
   height: 25px;
   border-top: 1px solid var(--dark-text-color);
   border-right: 1px solid var(--dark-text-color);
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--inblock-padding);
+  inset-block-start: var(--inblock-padding);
 }
 
 .footer::after {
@@ -232,8 +232,8 @@
   height: 25px;
   border-bottom: 1px solid var(--dark-text-color);
   border-left: 1px solid var(--dark-text-color);
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--inblock-padding);
+  inset-block-end: var(--inblock-padding);
 }
 
 @media (min-width: 768px) {
