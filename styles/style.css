@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  margin: 0 auto;
+  margin: 0;
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
@@ -23,10 +27,13 @@
 .header {
   position: relative;
   min-block-size: 100vh;
+  margin-block-start: calc(-1 * var(--inblock-padding));
+  margin-block-end: calc(10px - var(--inblock-padding));
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  1fr min-content 1fr;
   margin-block-end: 10px;
+  padding-block: var(--inblock-padding);
 }
 
 .decore_rec {
@@ -92,7 +99,7 @@
   border-top: 1px solid var(--dark-text-color);
   border-right: 1px solid var(--dark-text-color);
   inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-block-start: var(--inblock-padding);
 }
 
 .header::after {
@@ -104,7 +111,7 @@
   border-bottom: 1px solid var(--dark-text-color);
   border-left: 1px solid var(--dark-text-color);
   inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-block-end: var(--inblock-padding);
 }
 
 .header__title {
