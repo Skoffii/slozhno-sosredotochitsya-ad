@@ -344,4 +344,8 @@
   .section__question_title {
     max-inline-size: none;
   }
+
+  .section__content_images {
+    max-block-size: calc(1028px + var(--inblock-padding));
+  }
 }
