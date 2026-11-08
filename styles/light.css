@@ -9,8 +9,34 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  color-scheme: light;
+  --bg-image: url('../images/cover-image-light.png');
+  --font-size: 18px;
+  --dark-text-color: #353430;
+  --light-text-color: #353430;
+  --medium-text-color: #353430;
+  --dark-text-color-transparent: #35343066;
+  --font: 'IBM Plex mono';
+  --title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --bg-color: #FFF1F7;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --bg-image: url('../images/cover-image-light.png');
+    --font-size: 18px;
+    --dark-text-color: #353430;
+    --light-text-color: #353430;
+    --medium-text-color: #353430;
+    --dark-text-color-transparent: #35343066;
+    --font: 'IBM Plex mono';
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --bg-color: #FFF1F7;
+  }
 }

@@ -7,6 +7,8 @@
   --font-size: 18px;
   --inblock-padding: 10px;
   --dark-text-color: #353430;
+  --light-text-color: #353430;
+  --medium-text-color: #353430;
   --dark-text-color-transparent: #35343066;
   --font: 'IBM Plex mono';
   --title-color: #ffc2e6;
@@ -20,13 +22,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-image: url('../images/cover-image-dark.png');
-    --dark-text-color: #F1B2CE;
-    --dark-text-color-transparent: #FF007066;
-    --title-color: #DB00FF;
-    --accent-color: #FF0070;
-    --bg-color: #000028;
-  }
-}
