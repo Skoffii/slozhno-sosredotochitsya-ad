@@ -26,6 +26,10 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
+.theme-light .decore_rec {
+    display: none;
+  }
+
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
     --bg-image: url('../images/cover-image-light.png');
@@ -38,5 +42,9 @@
     --title-color: #ffc2e6;
     --accent-color: #ff8dcb;
     --bg-color: #FFF1F7;
+  }
+
+  .decore_rec {
+    display: none;
   }
 }

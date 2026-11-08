@@ -26,7 +26,7 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
-.theme-dark .decore_rec{
+.theme-dark .decore_rec {
   display: flex;
 }
 
@@ -42,6 +42,10 @@
     --bg-color: #000028;
     --font: 'IBM Plex mono';
     --font-size: 18px;
+  }
+
+  .decore_rec {
+    display: flex;
   }
 }
 
