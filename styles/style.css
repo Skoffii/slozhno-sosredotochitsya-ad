@@ -360,20 +360,28 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content 1fr;
     column-gap: 20px;
+    grid-auto-flow: column;
   }
 
   .section__question_title {
     max-inline-size: none;
   }
 
-  .main__section_second_question .section__question_title {
-    grid-column: 1 / -1;
-    margin-block-end: 20px;
-  }
-
   .section__content_images {
     inline-size: 100%;
     margin-block-start: 20px;
+    max-block-size: calc(1028px + var(--inblock-padding));
+    gap: 20px;
+    padding-inline: var(--inblock-padding);
+  }
+}
+
+@media (width > 1024px) {
+  .section__content_images {
+    inline-size: 100%;
+    max-block-size: 1440px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
     gap: 20px;
     padding-inline: var(--inblock-padding);
   }
